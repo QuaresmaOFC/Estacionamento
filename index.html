@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Estacionamento</title>
+</head>
+<body>
+    <img src="img/banner.png" width="500px">
+    <h1>Dados do cliente</h1>
+    Digite o nome<br>
+    <input type="text" id="cxnome"><br>
+    Digite a placa <br>
+    <input type="text" id="cxplaca"><br>
+    Digite o modelo do carro<br>
+    <input type="text" id="cxmodelo"><br>
+    Digite quantos dias<br>
+    <input type="text" id="cxdias"><br>
+    Digite o valor da diária<br>
+    <input type="text" id="cxvalor"><br>
+    <button onclick="calcular()">Calcular</button>
+    <button onclick="limpar()">Limpar</button>
+    <button onclick="sair()">Sair</button>
+
+    <h2>Informações do Cliente</h2>
+    <div id="resultado"></div>
+    
+    <h3>Valores</h3>
+    <div id="valores">
+        <p id="totalSemDesconto"></p>
+        <p id="totalComDesconto"></p>
+    </div>
+</body>
+</html>
